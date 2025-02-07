@@ -1,0 +1,77 @@
+/* Center the register card */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+
+/* Style the register card */
+.register-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+/* Register title */
+.register-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Style input groups */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Register button */
+.register-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4c76f0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.register-button:hover {
+    background-color: #3b63d2;
+}
+
+/* Login link */
+.login-link {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #4c76f0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}

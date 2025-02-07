@@ -1,0 +1,367 @@
+/* EmployeeList.css */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.list-group-item {
+    border: none;
+    padding: 10px 20px;
+}
+
+.list-group-item:not(:last-child) {
+    border-bottom: 1px solid #eee;
+}
+
+.btn-edit {
+    background-color: #5c8eb9;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px; /* Add space between buttons */
+}
+
+.btn-edit:hover {
+    background-color: #4a7598;
+}
+
+.btn-delete {
+    background-color: #dc6b6b; 
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-delete:hover {
+    background-color: #c15858; 
+}
+
+.btn-primary {
+    background-color: #4b7bec;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #3867d6; 
+}
+
+.btn-secondary {
+    background-color: #95a5a6; 
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.btn-secondary:hover {
+    background-color: #7f8c8d;
+}
+
+.employee-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+.employee-table th,
+.employee-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.employee-table th {
+    background: #f8f9fa;
+    padding: 12px;
+    font-weight: 600;
+    text-align: left;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.employee-table tr:hover {
+    background-color: #f8f9fa;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-group input.error {
+    border-color: #dc3545;
+}
+
+.error-message {
+    color: #dc3545;
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+}
+
+button {
+    margin-right: 5px;
+    padding: 5px 10px;
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 0 20px;
+}
+
+.employee-container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 20px;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+/* Modal.css */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+}
+
+.modal-content h3 {
+    margin-bottom: 15px;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.modal-content button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.modal-content .btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.modal-content .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.modal-content .btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+.modal-content .btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+/* Add these new styles */
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-popup {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    z-index: 1001;
+}
+
+.modal-body {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.modal-body input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.modal-popup h3 {
+    margin: 0;
+    color: #333;
+}
+
+.search-container {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0,123,255,0.25);
+}
+
+.search-input::placeholder {
+    color: #999;
+}
+
+/* Add these pagination styles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.page-item {
+    margin: 0 5px;
+}
+
+.page-link {
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    background-color: white;
+    color: #007bff;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.page-item.active .page-link {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.page-link:hover {
+    background-color: #f8f9fa;
+    border-color: #007bff;
+}
+
+.pagination-info {
+    text-align: center;
+    margin-top: 10px;
+    color: #666;
+}
+
+/* Style table headers */
+.employee-table thead th {
+    background-color: #f8f9fa;
+    padding: 15px;
+    text-align: left;
+    border-bottom: 2px solid #dee2e6;
+}
+
+/* Style table cells */
+.employee-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+/* Add hover effect on rows */
+.employee-table tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Remove these styles */
+.form-group {
+    position: relative;
+}
+
+.form-group .error-message {
+    color: #dc3545;
+    font-size: 12px;
+    margin-top: 4px;
+    display: block;
+}
+
+/* Style for the ID cell */
+.id-cell {
+    background-color: #f8f9fa;
+    font-weight: 500;
+    color: #6c757d;
+    cursor: not-allowed;
+}
