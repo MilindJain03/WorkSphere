@@ -31,45 +31,21 @@ A web-based Employee Management System (EMS) that enables administrators to perf
 ### Prerequisites
 
 - Node.js (v14 or later)
-- Java 11+
-- PostgreSQL
-
-### Backend Setup
 
 1. Clone the repository:
    ```bash
-   git clone 
+   git clone https://github.com/MilindJain03/Worksphere.git
    ```
-2. Navigate to the backend directory:
-   ```bash
-   cd project-root/backend
-   ```
-3. Set up your PostgreSQL database:
-   ```sql
-   CREATE DATABASE employee_management;
-   ```
-4. Update the database credentials in `application.properties`:
-   ```properties
-   spring.datasource.url=jdbc:postgresql://localhost:5432/employee_management
-   spring.datasource.username=your-username
-   spring.datasource.password=your-password
-   ```
-5. Run the backend:
-   ```bash
-   ./gradlew bootRun
-   ```
-
-### Frontend Setup
-
-1. Navigate to the frontend directory:
+   
+2. Navigate to the frontend directory:
    ```bash
    cd project-root/frontend
    ```
-2. Install dependencies:
+3. Install dependencies:
    ```bash
    npm install
    ```
-3. Start the frontend server:
+4. Start the frontend server:
    ```bash
    npm run dev
    ```
@@ -91,5 +67,30 @@ A web-based Employee Management System (EMS) that enables administrators to perf
 | `/employees`         | POST   | Create a new employee              |
 | `/employees/{id}`    | PUT    | Update an existing employee        |
 | `/employees/{id}`    | DELETE | Delete an employee                 |
+
+## Screenshots
+
+### login/register
+![image](https://github.com/user-attachments/assets/4b2e2e47-05e3-4547-8294-35daea717984)
+![image](https://github.com/user-attachments/assets/82bc361d-99d6-41bc-8758-a4142a77897b)
+### Dashboard
+![image](https://github.com/user-attachments/assets/331c48a6-5dba-44f0-b02b-bb8f0d543f9f)
+### Add/Edit Entries
+![image](https://github.com/user-attachments/assets/7f4cb05e-b0c8-4e0c-907e-df7f818f3705)
+![image](https://github.com/user-attachments/assets/d049f6d1-917e-4aa9-8d1b-e314db35f9b3)
+### Search by Name or Role
+![image](https://github.com/user-attachments/assets/a9269527-2561-4846-aca4-d70a55115ff0)
+### Delete Entries
+![image](https://github.com/user-attachments/assets/95a87f6e-55cc-44d3-b145-d5479a26d1a3)
+### Form validation
+![image](https://github.com/user-attachments/assets/79f912f3-074f-4f70-9b88-03e69cf2e965)
+
+
+
+
+
+
+
+
 
 
